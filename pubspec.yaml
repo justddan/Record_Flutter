@@ -44,6 +44,8 @@ dependencies:
   google_fonts: ^4.0.3
   chewie: ^1.4.0
   video_player: ^2.6.1
+  json_annotation: ^4.8.0
+  dio: ^5.1.1
 
 dev_dependencies:
   flutter_test:
@@ -55,6 +57,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  json_serializable: ^6.6.1
+  build_runner: ^2.3.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

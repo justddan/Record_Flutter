@@ -33,6 +33,11 @@ import 'package:record_flutter/screens/study/pages/projects/kkang/ch13_4_scaffol
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch13_5_custom_scrollview/custom_scrollview.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch14_1_1_push_navigation/push_navigation.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch14_1_2_navigation_with_data/navigation_with_data.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch14_2_1_navigation2/navigation2.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch14_2_2_router_delegate/route_delegate.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch15_1_1_json/json.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch15_1_2_serializable/serializable.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch15_2_http/http.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/currency/nomad_currency.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/pomodoros/nomad_pomodoros.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/webtoon/nomad_webtoon.dart';
@@ -264,6 +269,31 @@ List<List<Content>> contents = [
       id: 27,
       title: "Navigation With Data",
       project: const KkangNavigationWithData(),
+    ),
+    Content(
+      id: 28,
+      title: "Navigation 2.0",
+      project: const KkangNavigation2(),
+    ),
+    Content(
+      id: 29,
+      title: "Route Delegate",
+      project: const KkangRouteDelegate(),
+    ),
+    Content(
+      id: 30,
+      title: "JSON Parsing",
+      project: const KkangJson(),
+    ),
+    Content(
+      id: 31,
+      title: "JSON Serializable",
+      project: const KkangSerializable(),
+    ),
+    Content(
+      id: 32,
+      title: "Http Package",
+      project: const KkangHttp(),
     ),
   ],
 ];

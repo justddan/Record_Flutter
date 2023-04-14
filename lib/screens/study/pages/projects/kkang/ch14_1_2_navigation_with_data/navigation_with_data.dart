@@ -10,6 +10,7 @@ class KkangNavigationWithData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: "/kkang_data_one",
       routes: {
         "/kkang_data_one": (context) => const KkangNavDataOneScreen(),
