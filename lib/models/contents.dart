@@ -38,6 +38,14 @@ import 'package:record_flutter/screens/study/pages/projects/kkang/ch14_2_2_route
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch15_1_1_json/json.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch15_1_2_serializable/serializable.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch15_2_http/http.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch15_3_dio/dio.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch16_1_future/future.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch16_2_await/await.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch16_3_stream/stream.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch16_4_stream_etc/stream_etc.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch17_isolate/isolate.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch18_1_1_parent_state/parent_state.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch18_1_2_grandparent_state/grandparent_state.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/currency/nomad_currency.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/pomodoros/nomad_pomodoros.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/webtoon/nomad_webtoon.dart';
@@ -294,6 +302,46 @@ List<List<Content>> contents = [
       id: 32,
       title: "Http Package",
       project: const KkangHttp(),
+    ),
+    Content(
+      id: 33,
+      title: "Dio Package",
+      project: const KkangDio(),
+    ),
+    Content(
+      id: 34,
+      title: "Future",
+      project: const KkangFuture(),
+    ),
+    Content(
+      id: 35,
+      title: "Await",
+      project: const KkangAwait(),
+    ),
+    Content(
+      id: 36,
+      title: "Stream",
+      project: const KkangStream(),
+    ),
+    Content(
+      id: 37,
+      title: "Stream etc",
+      project: const KkangStreamEtc(),
+    ),
+    Content(
+      id: 38,
+      title: "Isolate",
+      project: const KkangIsolate(),
+    ),
+    Content(
+      id: 39,
+      title: "Parent State",
+      project: const KkangParentState(),
+    ),
+    Content(
+      id: 40,
+      title: "Grandparent State",
+      project: const KkangGrandparentState(),
     ),
   ],
 ];
