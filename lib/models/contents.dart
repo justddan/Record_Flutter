@@ -46,6 +46,11 @@ import 'package:record_flutter/screens/study/pages/projects/kkang/ch16_4_stream_
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch17_isolate/isolate.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch18_1_1_parent_state/parent_state.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch18_1_2_grandparent_state/grandparent_state.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch18_2_inherited_state/inherited_state.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_1_provider/provider.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_2_1_change_notifier_provider/change_notifier_provider.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_2_2_multi_provider/multi_provider.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_2_3_proxy_provider/proxy_provider.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/currency/nomad_currency.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/pomodoros/nomad_pomodoros.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/webtoon/nomad_webtoon.dart';
@@ -342,6 +347,31 @@ List<List<Content>> contents = [
       id: 40,
       title: "Grandparent State",
       project: const KkangGrandparentState(),
+    ),
+    Content(
+      id: 41,
+      title: "Inherited State",
+      project: const KkangInheritedState(),
+    ),
+    Content(
+      id: 42,
+      title: "Provider",
+      project: const KkangProvider(),
+    ),
+    Content(
+      id: 43,
+      title: "Change Notifier Provider",
+      project: const KkangChangeNotifierProvider(),
+    ),
+    Content(
+      id: 44,
+      title: "Multi Provider",
+      project: const KkangMultiProvider(),
+    ),
+    Content(
+      id: 45,
+      title: "Proxy Provider",
+      project: const KkangProxyProvider(),
     ),
   ],
 ];

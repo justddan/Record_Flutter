@@ -4,13 +4,15 @@ class KkangGrandparentState extends StatefulWidget {
   const KkangGrandparentState({super.key});
 
   @override
-  State<KkangGrandparentState> createState() => _KkangGrandparentStateState();
+  State<KkangGrandparentState> createState() {
+    return KkangGrandparentStateState();
+  }
 }
 
-class _KkangGrandparentStateState extends State<KkangGrandparentState> {
+class KkangGrandparentStateState extends State<KkangGrandparentState> {
   bool favorited = false;
   int favoriteCount = 10;
-  GlobalKey<_KkangChildWidgetState> childKey = GlobalKey();
+  GlobalKey<KkangChildWidgetState> childKey = GlobalKey();
   int childCount = 0;
 
   void toggleFavorite() {
@@ -26,7 +28,7 @@ class _KkangGrandparentStateState extends State<KkangGrandparentState> {
   }
 
   void getChildData() {
-    _KkangChildWidgetState? childState = childKey.currentState;
+    KkangChildWidgetState? childState = childKey.currentState;
     setState(() {
       childCount = childState?.childCount ?? 0;
     });
@@ -56,8 +58,8 @@ class _KkangGrandparentStateState extends State<KkangGrandparentState> {
               ],
             ),
             KkangChildWidget(key: childKey),
-            const KkangIconWidget(),
-            const KkangContentWidget(),
+            KkangIconWidget(),
+            KkangContentWidget(),
           ],
         ),
       ),
@@ -70,11 +72,11 @@ class KkangChildWidget extends StatefulWidget {
 
   @override
   State<KkangChildWidget> createState() {
-    return _KkangChildWidgetState();
+    return KkangChildWidgetState();
   }
 }
 
-class _KkangChildWidgetState extends State<KkangChildWidget> {
+class KkangChildWidgetState extends State<KkangChildWidget> {
   int childCount = 0;
 
   @override
@@ -101,22 +103,16 @@ class KkangIconWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    _KkangGrandparentStateState? state =
-        context.findAncestorStateOfType<_KkangGrandparentStateState>();
-
+    KkangGrandparentStateState? state =
+        context.findAncestorStateOfType<KkangGrandparentStateState>();
     return Center(
-      child: Column(
-        children: [
-          Text("${state!.favorited}"),
-          IconButton(
-            icon: ((state.favorited)
-                ? const Icon(Icons.favorite)
-                : const Icon(Icons.favorite_border)),
-            color: Colors.red,
-            iconSize: 200,
-            onPressed: state.toggleFavorite,
-          ),
-        ],
+      child: IconButton(
+        icon: ((state?.favorited ?? false)
+            ? const Icon(Icons.favorite)
+            : const Icon(Icons.favorite_border)),
+        iconSize: 200,
+        color: Colors.red,
+        onPressed: state?.toggleFavorite,
       ),
     );
   }
@@ -127,8 +123,8 @@ class KkangContentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    _KkangGrandparentStateState? state =
-        context.findAncestorStateOfType<_KkangGrandparentStateState>();
+    KkangGrandparentStateState? state =
+        context.findAncestorStateOfType<KkangGrandparentStateState>();
     return Center(
       child: Text(
         "favoriteCount : ${state?.favoriteCount}",
