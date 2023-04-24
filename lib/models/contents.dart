@@ -56,6 +56,16 @@ import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_3_1_consu
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_3_2_selector/selector.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch20_2_bloc/bloc.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch20_3_1_various_bloc/various_bloc.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch20_3_2_bloc_consumer/bloc_consumer.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch20_4_bloc_cubit/bloc_cubit.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch21_1_getx/getx.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch21_2_getx_rx/getx_rx.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch22_2_message_channel/message_channel.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch22_3_method_channel/method_channel.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch22_4_event_channel/event_channel.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_1_geolocator/geolocator.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_2_image_picker/image_picker.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_3_shared_preferences/shared_preferences.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/currency/nomad_currency.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/pomodoros/nomad_pomodoros.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/webtoon/nomad_webtoon.dart';
@@ -402,6 +412,56 @@ List<List<Content>> contents = [
       id: 50,
       title: "Various Bloc",
       project: const KkangVariousBloc(),
+    ),
+    Content(
+      id: 51,
+      title: "Bloc Consumer/Repository",
+      project: const KkangBlocConsumer(),
+    ),
+    Content(
+      id: 52,
+      title: "Bloc Cubit",
+      project: const KkangBlocCubit(),
+    ),
+    Content(
+      id: 53,
+      title: "GetX",
+      project: const KkangGetX(),
+    ),
+    Content(
+      id: 54,
+      title: "GetX Rx",
+      project: const KkangGetXRx(),
+    ),
+    Content(
+      id: 55,
+      title: "Message Channel",
+      project: const KkangMessageChannel(),
+    ),
+    Content(
+      id: 56,
+      title: "Method Channel",
+      project: const KkangMethodChannel(),
+    ),
+    Content(
+      id: 57,
+      title: "Event Channel",
+      project: const KkangEventChannel(),
+    ),
+    Content(
+      id: 58,
+      title: "Geolocator",
+      project: const KkangGeolocator(),
+    ),
+    Content(
+      id: 59,
+      title: "Image Picker",
+      project: const KkangImagePicker(),
+    ),
+    Content(
+      id: 60,
+      title: "Shared Preferences",
+      project: const KkangSharedPreferences(),
     ),
   ],
 ];
