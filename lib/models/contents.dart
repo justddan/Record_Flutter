@@ -51,6 +51,11 @@ import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_1_provide
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_2_1_change_notifier_provider/change_notifier_provider.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_2_2_multi_provider/multi_provider.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_2_3_proxy_provider/proxy_provider.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_2_4_future_provider/future_provider.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_3_1_consumer/consumer.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch19_3_2_selector/selector.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch20_2_bloc/bloc.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch20_3_1_various_bloc/various_bloc.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/currency/nomad_currency.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/pomodoros/nomad_pomodoros.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/webtoon/nomad_webtoon.dart';
@@ -372,6 +377,31 @@ List<List<Content>> contents = [
       id: 45,
       title: "Proxy Provider",
       project: const KkangProxyProvider(),
+    ),
+    Content(
+      id: 46,
+      title: "Future/Stream Provider",
+      project: const KkangFutureProvider(),
+    ),
+    Content(
+      id: 47,
+      title: "Consumer",
+      project: const KkangConsumer(),
+    ),
+    Content(
+      id: 48,
+      title: "Selector",
+      project: const KkangSelector(),
+    ),
+    Content(
+      id: 49,
+      title: "Bloc",
+      project: const KkangBloc(),
+    ),
+    Content(
+      id: 50,
+      title: "Various Bloc",
+      project: const KkangVariousBloc(),
     ),
   ],
 ];
