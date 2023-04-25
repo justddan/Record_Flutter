@@ -66,6 +66,7 @@ import 'package:record_flutter/screens/study/pages/projects/kkang/ch22_4_event_c
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_1_geolocator/geolocator.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_2_image_picker/image_picker.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_3_shared_preferences/shared_preferences.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_4_sqflite/sqflite.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/currency/nomad_currency.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/pomodoros/nomad_pomodoros.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/webtoon/nomad_webtoon.dart';
@@ -462,6 +463,11 @@ List<List<Content>> contents = [
       id: 60,
       title: "Shared Preferences",
       project: const KkangSharedPreferences(),
+    ),
+    Content(
+      id: 61,
+      title: "Sqflite",
+      project: const KkangSqflite(),
     ),
   ],
 ];

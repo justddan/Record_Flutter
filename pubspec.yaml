@@ -51,6 +51,8 @@ dependencies:
   flutter_bloc: ^8.1.2
   geolocator: ^9.0.2
   image_picker: ^0.8.7+4
+  sqflite: ^2.2.7
+  firebase_core: ^2.10.0
 
 dev_dependencies:
   flutter_test:
