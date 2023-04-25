@@ -67,6 +67,8 @@ import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_1_geoloca
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_2_image_picker/image_picker.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_3_shared_preferences/shared_preferences.dart';
 import 'package:record_flutter/screens/study/pages/projects/kkang/ch23_4_sqflite/sqflite.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch24_2_firebase_auth/firebase_auth.dart';
+import 'package:record_flutter/screens/study/pages/projects/kkang/ch25_2_firebase_store/firebase_store.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/currency/nomad_currency.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/pomodoros/nomad_pomodoros.dart';
 import 'package:record_flutter/screens/study/pages/projects/nomad/webtoon/nomad_webtoon.dart';
@@ -468,6 +470,16 @@ List<List<Content>> contents = [
       id: 61,
       title: "Sqflite",
       project: const KkangSqflite(),
+    ),
+    Content(
+      id: 62,
+      title: "Firebase Auth",
+      project: const KkangFirebaseAuth(),
+    ),
+    Content(
+      id: 63,
+      title: "Firebase Store/Storage",
+      project: const KkangFirebaseStore(),
     ),
   ],
 ];
